@@ -1,0 +1,31 @@
+{
+  "name": "SPSR"
+  , "model": "spsr"
+  , "scale": 4
+  , "gpu_ids": [0]
+
+  , "datasets": {
+    "test_1": { 
+      "name": "set5"
+      , "mode": "LR"
+      , "dataroot_LR": "C:/Users/majka/OneDrive/Pulpit/TEST/SPSR-master/code/data/dataset/Set5/LR"
+    }
+  }
+  , "path": {
+    "root": "C:/Users/majka/OneDrive/Pulpit/TEST/SPSR-master/release"
+    , "pretrain_model_G": "C:/Users/majka/OneDrive/Pulpit/TEST/SPSR-master/experiments/pretrain_models/spsr.pth"
+  }
+
+  , "network_G": {
+    "which_model_G": "spsr_net"
+    , "norm_type": null
+    , "mode": "CNA"
+    , "nf": 64
+    , "nb": 23
+    , "in_nc": 3
+    , "out_nc": 3
+
+    , "gc": 32
+    , "group": 1
+  }
+}
